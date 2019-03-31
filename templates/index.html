@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>WeCollab</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'main_app/styles.css' %}">
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="http://pluspng.com/img-png/spotify-logo-png-open-2000.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        <p class="title">WeCollab</p>
+        <p class="sub title">for Spotify</p>
+      </a>
+    </nav>
+    <div class="container">
+      <div id="main_div" class="row">
+        <div class="col">
+          <div class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <button id="1" class="nxt next_button btn btn-outline-primary">Log into Spotify</button>
+              </div>
+              <div class="carousel-item">
+                <div class="step2">
+                  <h5>Members</h5>
+                  <div id="member_div">
+                    <input style="margin-bottom:10px;border-color:green" type="text" placeholder="Member name" class="form-control input-md membername" style="display: inline; width: 70%">
+                  </div>
+                  <button class="add_button" style="display:inline;background:none;border:none;position:relative;left:47%;margin-bottom:25px">Add</button>
+                  <hr>
+                  <h5 style="margin-top: 25px">Playlists</h5>
+                  <div class="list-group">
+                  <!-- <a id="2" href="#" class="nxt next_button list-group-item list-group-item-action">Cras justo odio</a>
+                  <a id="2" href="#" class="nxt next_button list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+                  <a id="2" href="#" class="nxt next_button list-group-item list-group-item-action">Morbi leo risus</a>
+                  <a id="2" href="#" class="nxt next_button list-group-item list-group-item-action">Porta ac consectetur ac</a>
+                  <a id="2" href="#" class="nxt next_button list-group-item list-group-item-action" tabindex="-1" aria-disabled="true">Vestibulum at eros</a> -->
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <button id="3" type="button" class="next_button nxt btn btn-outline-primary">Done</button>
+              </div>
+              <div class="carousel-item">
+                <p>Thank You</p>
+              </div>
+            </div>
+          </div>
+          <!-- <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" class="active"></li>
+              <li data-target="#carouselExampleIndicators"></li>
+              <li data-target="#carouselExampleIndicators"></li>
+            </ol> -->
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{% static 'main_app/index.js' %}"></script>
+  </body>
+</html>
